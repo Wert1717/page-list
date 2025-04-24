@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"></head>
+    <style>
+        .flex-item{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        d-flex - flexboxni ishga tushirish uchun kerak
+        justify-content-start - elementlarni chapga joylash
+        justify-content-center - elementlarni markazga joylash
+        justify-content-end - elementlarni o'ngga joylash
+        justify-content-between - elementlarni o'rtada joylash
+        justify-content-around - elementlarni o'rtada joylash va har bir element orasida teng masofa qoldirish
+        justify-content-evenly - elementlarni o'rtada joylash va har bir element orasida teng masofa qoldirish
+        align-items-start - elementlarni yuqoriga joylash
+        align-items-center - elementlarni markazga joylash
+        align-items-end - elementlarni pastga joylash
+        align-items-baseline - elementlarni pastki qismiga joylash
+        align-items-stretch - elementlarni yuqoriga joylash va har bir elementning balandligini tenglashtirish
+        flex-wrap - elementlarni qatorlarga bo'lish
+        flex-wrap-reverse - elementlarni qatorlarga bo'lish va har bir qatorni pastdan yuqoriga joylash
+        flex-wrap-nowrap - elementlarni qatorlarga bo'lish va har bir qatorni yuqoridan pastga joylash
+        flex-direction - elementlarni qatorlarga bo'lish va har bir qatorni chapdan o'ngga joylash
+        flex-direction-reverse - elementlarni qatorlarga bo'lish va har bir qatorni o'ngdan chapga joylash
+    -->
+    <div class="flex-container d-flex justify-content-evenly flex-wrap bg-success p-2 align-items-center" style="height: 600px;">
+        <div class="flex-item bg-primary p-2 text-center text-white fs-1">1</div>
+        <div class="flex-item bg-primary p-2 text-center text-white fs-1">2</div>
+        <div class="flex-item bg-primary p-2 text-center text-white fs-1">3</div>
+        <div class="flex-item bg-primary p-2 text-center text-white fs-1">4</div>
+    </div>
+
+</body>
+</html>
